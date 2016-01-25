@@ -29,6 +29,8 @@ You may also clone this project with the link provided next to the dropdown labe
 
 To download the project instead of cloning just click the Download ZIP button!
 
+If you clone or download this repository, to run it simply open the index.html file!
+
 
 ## Resources
 
