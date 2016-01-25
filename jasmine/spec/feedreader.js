@@ -63,7 +63,7 @@ $(function() {
          * detect the class in use for the menu-hidden element.
          */
         it('is hidden by default', function() {
-            expect($("body").hasClass("menu-hidden")).toBe(true);
+            expect($('body').hasClass('menu-hidden')).toBe(true);
 
         });
 
@@ -78,24 +78,19 @@ $(function() {
 
             // trigger click to make menu visible
             menuIcon.trigger('click');
-            expect(body.hasClass('menu-hidden')).toBe(false);
+            expect(body.hasClass('menu-hidden')).toBeFalsy();
 
             // trigger click to make menu invisible
             menuIcon.trigger('click');
-            expect(body.hasClass('menu-hidden')).toBe(true);
+            expect(body.hasClass('menu-hidden')).toBeTruthy();
 
         });
-
-
-
-
 
     });
 
 
     /* A test suite named "Initial Entries" */
     describe('Initial Entries', function() {
-
          beforeEach(function(done){
             loadFeed(0, done);
         });
@@ -104,12 +99,10 @@ $(function() {
          * function is called and completes its work, there is at least
          * a single .entry element within the .feed container.
          */
-         it('should contain at least one feed', function(done) {
+         it('should contain at least one feed', function() {
             expect($(".entry").length).toBeGreaterThan(0);
-            done();
 
          });
-
 
     });
         
@@ -118,7 +111,6 @@ $(function() {
     describe('New Feed Selection', function() {
         /* Declare variables to contain content that will be compared. */
         var feedZero;
-        var feedOne;
         
         /* Load up our first feed with array index of zero and change the value of
          * variable feedZero to the text contained within .entry.
@@ -126,24 +118,19 @@ $(function() {
 
         beforeEach(function(done) {
             loadFeed(0, function() {
-                feedZero = $(".entry").text();
-            });
-
-            /* Now we load our second feed with the array index of one and change the value
-             * of feedOne to the text within .entry.
-             */
-            loadFeed(1, function() {
-                feedOne = $(".entry").text();
-                done();
+                feedZero = $('.feed').text();
+                loadFeed(1, function() {
+                    done();
+                }); 
             });
         });
-
+          
         /* A test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          */
-         it('changes content', function(done) {
+         it('changes content', function() {
+            var feedOne = $('.feed').text();
             expect(feedZero).not.toEqual(feedOne);
-            done();
          });
 
 
