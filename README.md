@@ -23,7 +23,7 @@ This project was a great introduction to TDD and the wonderful testing framework
 
 You have a few options.
 
-You may click this link to check out a [live]() version hosted with GitHub pages!
+You may click this link to check out a [live](http://tmurph850.github.io/Project-6/) version hosted with GitHub pages!
 
 You may also clone this project with the link provided next to the dropdown labeled HTTPS
 
@@ -32,9 +32,11 @@ To download the project instead of cloning just click the Download ZIP button!
 
 ## Resources
 
-[htmlgoodies](http://www.htmlgoodies.com/beyond/javascript/js-ref/testing-dom-events-using-jquery-and-jasmine-2.0.html)
-[jasmine docs](http://jasmine.github.io/2.1/introduction.html)
-[jQuery docs](https://api.jquery.com/hasclass/)
+* [htmlgoodies](http://www.htmlgoodies.com/beyond/javascript/js-ref/testing-dom-events-using-jquery-and-jasmine-2.0.html)
+
+* [Jasmine docs](http://jasmine.github.io/2.1/introduction.html)
+
+* [jQuery docs](https://api.jquery.com/hasclass/)
 
 
 
