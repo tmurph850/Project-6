@@ -23,7 +23,7 @@ This project was a great introduction to TDD and the wonderful testing framework
 
 You have a few options.
 
-You may click this link to check out a [live](http://tmurph850.github.io/project-6/) version hosted with GitHub pages!
+You may click this link to check out a [live](http://tmurph850.github.io/frontend-nanodegree-feedreader/) version hosted with GitHub pages!
 
 You may also clone this project with the link provided next to the dropdown labeled HTTPS
 
