@@ -109,7 +109,6 @@ $(function() {
 
     /* A test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
-        /* Declare variables to contain content that will be compared. */
         var feedZero;
         
         /* Load up our first feed with array index of zero and change the value of
